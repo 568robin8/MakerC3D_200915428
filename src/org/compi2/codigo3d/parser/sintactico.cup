@@ -87,8 +87,8 @@ logica   ::=    logica:izq OR logica:der
             {:
                 String et_v = ControlC3D.generar_etiqueta();
                 String et_f = ControlC3D.generar_etiqueta();
-                String c3d = "if "+izq.getCad()+ op.getCad() + der.getCad() +" then goto "+et_v+" : \n";
-                c3d += "goto " + et_f +" : \n";
+                String c3d = "if "+izq.getCad()+ op.getCad() + der.getCad() +" then go to "+et_v+" : \n";
+                c3d += "go to " + et_f +" : \n";
                 RESULT = new NodoC3D(c3d,et_v, et_f);
             :}
             
